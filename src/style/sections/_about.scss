@@ -1,0 +1,135 @@
+#about {
+  background-color: $primary-color;
+  background-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
+  color: $white-color;
+  height: 100%;
+  border-top: 0px;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  padding-bottom: 10%;
+
+  @include respond(tab-land) {
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
+
+  .about-wrapper {
+    @include respond(phone) {
+      padding-bottom: 5rem;
+    }
+// 
+    #slider {
+      position: relative;
+      width: 500px;
+      height: 750px;
+      overflow: hidden;
+      object-fit: contain;
+      // box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    }
+    #slider ul {
+      position: relative;
+      list-style: none;
+      height: 100%;
+      width: 10000%;
+      padding: 0;
+      margin: 0;
+      transition: all 750ms ease;
+      left: 0;
+    }
+    #slider ul li {
+      position: relative;
+      height: 100%;
+      // display: inline-block;
+      float: inline-start;
+    }
+    #slider ul li img{
+      max-width: 100%;
+      max-height: 100%;
+      // width: 500px;
+    }
+     
+    #slider #prev, #slider #next {
+      width: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      font-size: 2rem;
+      text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+      text-align: center;
+      color: white;
+      text-decoration: none;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      transition: all 150ms ease;
+    }
+    #slider #prev:hover, #slider #next:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+      text-shadow: 0;
+    }
+    #slider #prev {
+      left: 10px;
+    }
+    #slider #next {
+      right: 10px;
+    }
+    // 
+
+    &__image {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+
+      @include respond(tab-land) {
+        height: 100%;
+      }
+      @include respond(tab-port-sm) {
+        padding-bottom: 6.4rem;
+      }
+    }
+
+    &__info {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      flex-direction: column;
+
+      @include respond(tab-port-sm) {
+        align-items: center;
+      }
+
+      &-text {
+        text-align: left;
+
+        @include respond(tab-port) {
+          text-align: left;
+        }
+        @include respond(tab-port-sm) {
+          text-align: center;
+        }
+
+        &--important {
+          background: darken($secondary-color, 1%);
+          display: inline-block;
+          font-style: italic;
+          padding: 0 0.3rem;
+          margin: 0.3rem 0;
+          line-height: 1.6;
+
+          @include respond(phone) {
+            display: inline;
+            margin: 0;
+            padding: 0;
+            background: transparent;
+            font-style: normal;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Put here your site title -->
+    <title>Rajan Srimat | Developer</title>
+    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="[username], [name], Java, c++, Python, Full Stack" />
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Rajan Srimat Software Developer" />
+
+    <!-- Required librarys -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: false });
+    </script>
+
+    <!-- Remove this script once you setup your custom portfolio -->
+    <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+  </head>
+
+  <!-- Follow the HTML instructions to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <div id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title" class="load-hidden">
+          Hi, my name is <span class="text-color-main">Rajan</span>
+          <br />
+          I'm A Software Engineer.
+        </h1>
+        <p class="hero-cta" class="load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+            >More about me</a
+          >
+        </p>
+      </div>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image" id="slider">
+              <ul id="slideWrap"> 
+                <li><img class="img-fluid rounded shadow-lg" src="assets/pic1.jpg" alt=""></li>
+                <li><img class="img-fluid rounded shadow-lg" src="assets/pic2.jpg" alt=""></li>
+                <li><img class="img-fluid rounded shadow-lg" src="assets/pic3.jpg" alt=""></li>
+                <li><img class="img-fluid rounded shadow-lg" src="assets/pic4.jpg" alt=""></li>
+              </ul>
+              <a id="prev">&#8810;</a>
+              <a id="next">&#8811;</a>
+              <!-- <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="assets/profile.jpg"
+                alt="Profile Image"
+              /> -->
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info">
+              <p class="about-wrapper__info-text">
+                Hey! Welcome to to my profile! So here are some things I would like to share about me.
+                I was born in India and moved here when I was 3. Some of my hobbies are Rock ciimbing, working out, gaming, and reading. I was
+                I am a pretty big Marvel fan. I love adventure and learning new things.
+              </p>
+              <p class="about-wrapper__info-text--important">
+                If you have any cool projects you want me to try please let me know and I'll do my best to get a working prototype.
+                click below for my resume.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href=""
+                >
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Full Stack Facial Recognition Application</h3>
+                <div>
+                  <p class="mb-4">
+                    A Full Stack project using React Js as a framework, ClarifAi for the Face recognition Model,
+                    Node.Js and Express.Js for the application API, and PostgreSQL for the database. 
+                    All deployed and hosted on Heroku: Cloud Application Platform
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://facerecai.herokuapp.com/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://facerecai.herokuapp.com/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project1.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">RoboNet Quick Search</h3>
+                <div>
+                  <p class="mb-4">
+                    This project is a Realtime search function on database of profiles. 
+                    The list of available profiles are updated everytime there is a change in the search bar.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="https://6586rajan.github.io/RoboNet/"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="https://github.com/6586rajan/RoboNet"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="https://6586rajan.github.io/RoboNet/" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project2.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <!-- <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Project Title 2</h3>
+                <div>
+                  <p class="mb-4">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Excepturi neque, ipsa animi maiores repellendus distinctio
+                    aperiam earum dolor voluptatum consequatur blanditiis
+                    inventore debitis fuga numquam voluptate ex architecto
+                    itaque molestiae.
+                  </p>
+                </div>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--hero"
+                  href="#!"
+                >
+                  See Live
+                </a>
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn text-color-main"
+                  href="#!"
+                >
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div data-tilt class="thumbnail rounded js-tilt">
+                    <img
+                      alt="Project Image"
+                      class="img-fluid"
+                      src="assets/project.jpg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div> -->
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">Let's talk</p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:6586rajan@gmail.com"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a rel="noreferrer" href="https://www.instagram.com/6586rajan/" target="_blank">
+            <i class="fa fa-instagram fa-inverse"></i>
+          </a>
+          <!-- <a rel="noreferrer" href="#!" target="_blank">
+            <i class="fa fa-codepen fa-inverse"></i>
+          </a> -->
+          <a rel="noreferrer" href="https://github.com/6586rajan" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+
+        <hr />
+
+        <!-- If you give me some credit, will be huge for me :) -->
+        <!-- <p class="footer__text">
+          © 2021 - Template developed by
+          <a rel="noreferrer" href="https://github.com/cobidev" target="_blank"
+            >Jacobo Martínez</a
+          >
+        </p> -->
+
+        <!-- Remove this paragraph once you setup your custom portfolio -->
+        <!-- <p class="mt-3 pt-3">
+          <a
+            rel="noreferrer"
+            class="github-button"
+            href="https://github.com/cobidev/simplefolio/fork"
+            data-icon="octicon-repo-forked"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Fork ntkme/github-buttons on GitHub"
+            >Fork</a
+          >
+          <a
+            rel="noreferrer"
+            class="github-button"
+            href="https://github.com/cobidev/simplefolio"
+            data-icon="octicon-star"
+            data-size="large"
+            data-show-count="true"
+            aria-label="Star cobidev/simplefolio on GitHub"
+            >Star</a
+          >
+        </p> -->
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+  </body>
+</html>
